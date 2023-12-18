@@ -2,16 +2,16 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <div>
-            <div className='flex justify-between'>
+        <div className=''>
+            <div className='flex justify-between mb-4'>
                 <h1>Welcome Nolubabalo!</h1>
                 <div>
                     <input placeholder='search recipes'></input>
                     <button>Search</button>
                 </div>
-                <ul>
-                    <li></li>
-                </ul>
+                <div>
+                    toggle
+                </div>
             </div>
         </div>
     )
