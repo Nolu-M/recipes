@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.item {
+    @apply flex items-center mb-2.5 cursor-pointer duration-300 ease-in-out;
+}
+
+
+
+.animate {
+    @layer animate-fadeIn;
+}
