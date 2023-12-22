@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <div className=''>
+        <div className='p-4'>
             <div className='flex justify-between mb-4'>
                 <h1>Welcome Nolubabalo!</h1>
                 <div>
