@@ -1,14 +1,23 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Main from './pages/main'
+import Home from './pages/Home'
+
+
 
 
 function App() {
 
   return (
-    <div className='container mx-auto'>
-      <Main />
+    <>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/main' element={<Main />} />
+      </Routes>
 
-    </div>
+
+
+    </>
   )
 }
 
