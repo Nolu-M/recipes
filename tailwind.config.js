@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'home-page': "url('/src/assets/mainbg.jpg')"
+      },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
