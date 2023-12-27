@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'primary': ['Lugrasimo', 'cursive']
+      },
       backgroundImage: {
         'home-page': "url('/src/assets/mainbg.jpg')"
       },
