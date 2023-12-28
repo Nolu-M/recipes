@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 
 const Navbar = () => {
@@ -13,17 +15,17 @@ const Navbar = () => {
     };
 
     return (
-        <div className='fixed mr-0 p-10 h-screen'>
+        <div className=' mr-0 p-10 h-screen fixed'>
             {
                 !sidebarOpen ? (
-                    <div className='cursor-pointer w-12 h-12 flex items-center justify-center ' onClick={handleSidebarOpen}>
+                    <div className='cursor-pointer w-12 h-12 flex items-center justify-center' onClick={handleSidebarOpen}>
                         <span className="material-symbols-outlined">
                             menu
                         </span>
                     </div>
                 ) : (
                     <>
-                        <div className='cursor-pointer w-12 h-12 flex items-center justify-center ' onClick={handleSidebarClose} >
+                        <div className='cursor-pointer w-12 h-12 flex items-center justify-center' onClick={handleSidebarClose} >
                             <span class="material-symbols-outlined">
                                 close
                             </span>
@@ -32,44 +34,44 @@ const Navbar = () => {
                         <h2>The Cookbook</h2>
                         <div className='w-52 pt-6 flex flex-col'>
                             <div className='item animate p-4'>
-                                <a href='/'>
+                                <Link to='/'>
                                     <span class="material-symbols-outlined mr-2 align-middle">
                                         house
                                     </span>
                                     Home
-                                </a>
+                                </Link>
                             </div>
                             <div className='item animate p-4'>
-                                <a href='/recipes'>
+                                <Link to='/recipes'>
                                     <span class="material-symbols-outlined mr-2 align-middle">
                                         menu_book
                                     </span>
                                     Recipes
-                                </a>
+                                </Link>
                             </div>
                             <div className='item animate p-4'>
-                                <a href='/drinks'>
+                                <Link to='/drinks'>
                                     <span class="material-symbols-outlined mr-2 align-middle">
                                         glass_cup
                                     </span>
                                     Drinks
-                                </a>
+                                </Link>
                             </div>
                             <div className='item animate p-4'>
-                                <a href='/meal-plan'>
+                                <Link to='/meal-plan'>
                                     <span class="material-symbols-outlined mr-2 align-middle">
                                         restaurant_menu
                                     </span>
                                     Meal Plan
-                                </a>
+                                </Link>
                             </div>
                             <div className='item animate p-4'>
-                                <a href='/my-cookbook'>
+                                <Link to='/my-cookbook'>
                                     <span class="material-symbols-outlined mr-2 align-middle">
                                         auto_stories
                                     </span>
                                     My Cookbook
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
