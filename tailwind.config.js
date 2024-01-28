@@ -10,7 +10,8 @@ export default {
         'primary': ['Lugrasimo', 'cursive']
       },
       backgroundImage: {
-        'home-page': "url('/src/assets/mainbg.jpg')"
+        'home-page': "url('/src/assets/homebg.jpg')",
+        'main-page': "url('/src/assets/mainbg.jpg')",
       },
       keyframes: {
         fadeIn: {

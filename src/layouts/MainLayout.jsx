@@ -1,5 +1,5 @@
-import React from 'react'
 import Navbar from '../components/Navbar'
+import { PropTypes } from 'prop-types'
 
 const MainLayout = ({ children }) => {
     return (
@@ -8,7 +8,11 @@ const MainLayout = ({ children }) => {
             {children}
         </>
     )
-}
+};
+
+MainLayout.propTypes = {
+    children: PropTypes.node.isRequired,
+};
 
 export default MainLayout
 

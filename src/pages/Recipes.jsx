@@ -1,5 +1,4 @@
-import React from 'react'
-import MainLayout from '../layouts/MainLayout'
+import MainLayout from '../layouts/MainLayout';
 
 const Recipes = () => {
     return (
@@ -10,6 +9,6 @@ const Recipes = () => {
         </MainLayout>
 
     )
-}
+};
 
-export default Recipes
+export default Recipes;
